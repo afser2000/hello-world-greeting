@@ -1,4 +1,8 @@
 node('docker') {
+	tools {
+      		// Use GitLinux named git executable on linux.
+      		git "GitLinux"
+   	}
 	stage('Poll') {
 		checkout scm
 	}
